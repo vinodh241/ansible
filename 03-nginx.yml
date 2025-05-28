@@ -15,10 +15,10 @@
     ansible.builtin.service:
       name: nginx
       enabled: yes
-  - name: remove nginx package after installing
-    ansible.builtin.package:
-      name: nginx
-      state: absent
+  # - name: remove nginx package after installing
+  #   ansible.builtin.package:
+  #     name: nginx
+  #     state: absent
 
 
 
