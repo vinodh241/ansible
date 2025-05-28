@@ -1,5 +1,5 @@
 - name: nginx install and run
-  hosts: backend
+  hosts: frontend
   become: yes # root access
   tasks: 
   - name: install nginx server
