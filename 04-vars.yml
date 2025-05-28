@@ -4,10 +4,10 @@
   #become: yes
   vars:
     COURSE: ANSINLE  # equal to  COURSE=Ansible in shell , shell we refer $VAR or ${var}
-    DURATION: 10 HR
-    TRAINER: SIVA KUMAR
+    DURATION: 10HR
+    TRAINER: SIVAKUMAR
   tasks:
   - name: print course information
     ansible.builtin.debug:
     # vars refernce should be sourrended by ""
-      msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TARINER }}"
+      msg: " Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TARINER }} "
