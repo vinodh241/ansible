@@ -1,0 +1,13 @@
+- name: varaiables in ansibls
+  hosts: local
+  connection: local
+  become: yes
+  vars:
+    COURSE: ANSINLE  # equal to  COURSE=Ansible in shell , shell we refer $VAR or ${var}
+    DURATION: 10 HR
+    TRAINER: SIVA KUMAR
+  tasks:
+  - name: print course information
+    ansible.builtin.package:
+    # vars refernce should be sourrended by ""
+      msg: "Hello {{ COURSE }}, course Duration: {{ DURATION }}, Trainer is {{ TARINER }}"
