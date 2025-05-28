@@ -9,5 +9,4 @@
   tasks:
   - name: print course information
     ansible.builtin.debug:
-    # vars refernce should be sourrended by ""
-      msg: " Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TARINER }} "
+      msg: "Hello {{ COURSE }}, Course Duration: {{ DURATION }}, Trainer is {{ TARINER }}"
