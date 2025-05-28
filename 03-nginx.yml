@@ -17,9 +17,9 @@
       enabled: yes
   - name: remove nginx package after installing
     ansible.builtin.package:
-    - name: nginx
+    - name: "{{ nginx }}""
       state: absent
-          
+
 
 
 
