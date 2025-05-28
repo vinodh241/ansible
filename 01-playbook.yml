@@ -1,13 +1,9 @@
-- fristname: vinodh
-  lastname: A
-  email: avalavinodh@gmail.com
-  address: Secureyes,Whitfiled
-  - type: perm
-    doorNo: 12436
-    street: Marathahalli
-  - type: current
-    doorNo: 5325
-    street: MG Road
+- name: ping the server
+  hosts: frontend
+  tasks: #list of tasks
+  - name: ping the server
+    ansible.builtin.ping:
+
 
 
     
