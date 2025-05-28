@@ -1,11 +1,11 @@
 - name: varaiables in ansibls
   hosts: local
   connection: local
-  #become: yes
-  # vars:
-  #   COURSE: ANSINLE  # equal to  COURSE=Ansible in shell , shell we refer $VAR or ${var}
-  #   DURATION: 10HR
-  #   TRAINER: SIVAKUMAR
+  become: yes
+  vars:
+    COURSE: ANSINLE  # equal to  COURSE=Ansible in shell , shell we refer $VAR or ${var}
+    DURATION: 10HR
+    TRAINER: SIVAKUMAR
   tasks:
   - name: print course information
     ansible.builtin.debug:
