@@ -1,7 +1,7 @@
-- name: varaiables from inventory
+- name: varaibles from inventory
   hosts: local
   connection: local
   tasks:
-  - name: print course information
-    ansible.builtin.dedubg:
-      msg: "Hello  ima learing {{COURSE}}, Course Duration:{{DURATION}},Trainer is{{TRAINER}}
+  - name: print course info
+    ansible.builtin.debug:
+      msg: "Hello Im learing {{COURSE}}, Course Duration:{{DURATION}},Trainer is:{{TRAINER}}"
