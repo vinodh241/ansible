@@ -1,0 +1,16 @@
+- name: Varaibles form prompt
+  hosts: local
+  connection: local
+  vars_prompt:
+  - name: USERNAME
+    prompt: pleas enter your usrname
+    private: true
+
+  - name: PASSWORD
+    prompt: Pleae enter your password
+    provate: true
+
+  tasks:
+  - name: printing user info
+    ansible.builtin.debug: # ansible.builtin.debug module is for printing the message
+      msg: "Hello Username{{USERNAME}}, Password is:{{PASSWORD}}"  
