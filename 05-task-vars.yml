@@ -13,6 +13,6 @@
       msg: "Hello {{COURSE}}, Course Duration: {{DURATION}}, Tariner is {{TRAINER}}"
       
   - name: print course infom again
-    ansible.builtin.package:
+    ansible.builtin.debug:
       msg: "Hello {{COURSE}}, Course Duration: {{DURATION}}, Trainer is:{{TRAINER}}"       
           
