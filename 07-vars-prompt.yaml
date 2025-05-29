@@ -5,12 +5,10 @@
   - name: USERNAME
     prompt: pleas enter your usrname
     private: true
-
   - name: PASSWORD
     prompt: Pleae enter your password
     provate: true
-    
   tasks:
   - name: printing user info
-    ansible.builtin.debug: # ansible.builtin.debug module is for printing the message
+    ansible.builtin.debug:
       msg: "Hello Username{{USERNAME}}, Password is:{{PASSWORD}}"  
