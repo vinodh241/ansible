@@ -1,0 +1,15 @@
+- name: task level varaiables
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Devops with Aws
+    DURATION: 120 HR
+    TRAINER: SIVAKUMAR
+  tasks:
+  - name: print course info
+    vars:
+      COURSE: Ansible
+      # vars refernce should be surrounded by ""
+    ansible.builtin.debug:
+      msg: "Hello {{COURSE}}, Course Duration : {{DURATION}}, Trainer is {{TARINER}}"    
+       
