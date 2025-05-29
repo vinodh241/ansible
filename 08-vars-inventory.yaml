@@ -4,4 +4,4 @@
   tasks:
   - name: print course information
     ansible.builtin.dedubg:
-      msg: "Hello {{COURSE}}, Course Duration:{{DURATION}},Trainer is{{TRAINER}}
+      msg: "Hello  ima learing {{COURSE}}, Course Duration:{{DURATION}},Trainer is{{TRAINER}}
