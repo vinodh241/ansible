@@ -3,10 +3,10 @@
   connection: local
   become: yes
   vars:
-    COURSE: ANSINLE  # equal to  COURSE=Ansible in shell , shell we refer $VAR or ${var}
+    COURSE: Ansible  # equal to  COURSE=Ansible in shell , shell we refer $VAR or ${var}
     DURATION: 10HR
     TRAINER: SIVAKUMAR
   tasks:
   - name: print course information
     ansible.builtin.debug:
-      msg: "Hello ansible, Course Duration: 10hr , Trainer is sivakumar"
+      msg: "Hello {{COURSE}}, Course Duration: {{DURATION}} , Trainer is {{TRAINER}}"
