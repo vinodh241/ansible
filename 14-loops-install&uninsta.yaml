@@ -1,4 +1,4 @@
-- name: Ansible loops
+- name: Ansible install & un-iunstalling packages
   hosts: frontend
   connection: local
   become: yes
@@ -7,10 +7,10 @@
     ansible.builtin.package:
       name: "{{ item }}"
       state: installed
-  loops:
-    - { name: 'nginx', state: 'present' } 
-    - { name: 'mysql', state: 'absent' }
-    - { name: 'zip',  state: 'absent' }
-    - { name: 'httpd', state: 'absent' }
-    - { name: 'unzip', state: 'absent' }
+    loop:
+      - { name: 'nginx', state: 'present' } 
+      - { name: 'mysql', state: 'absent' }
+      - { name: 'zip',  state: 'absent' }
+      - { name: 'httpd', state: 'absent' }
+      - { name: 'unzip', state: 'absent' }
   
