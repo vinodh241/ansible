@@ -6,10 +6,10 @@
     ansible.builtin.package:
       name: ansible
       state: present
-  - name: starting ansible
-    ansible.builtin.service:
-      name: ansible
-      state: started
+  # - name: starting ansible
+  #   ansible.builtin.service:
+  #     name: ansible
+  #     state: started
   - name: enabled ansible
     ansible.builtin.service:
       name: ansible
