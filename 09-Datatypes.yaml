@@ -1,0 +1,18 @@
+- name: Data types in Ansible
+  hosts: local
+  connection: local
+  varas:
+    DURATION: 120 # Number
+    COURSE: "DevSecOps with Aws"  # srting
+    IS_LIVE: true # boolean
+    TOOLS:  # List []
+    - Linux
+    - shell scripting
+    - Ansible
+    CONCEPTS:  # MAP or Dictionry or Object
+      CI: jenkins
+      SCRIPTING: "LINUX, ANISBLE,TERRAFORM,PYTHON"
+    tasks:
+    - name: print course info
+      ansible.builtin.debug:
+        msg: "Hello course is:{{COURSE}}, Duration is {{DURATION}},Tools are {{TOOLS}},Concepts {{CONCEPTS}}"  
