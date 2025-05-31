@@ -9,7 +9,7 @@
       state: "{{ item.state}}"
     loop:
     - { name: 'nginx', state: 'present' } 
-    - { name: 'mysql', state: 'absent' }
+    - { name: 'mysql', state: 'installed' }
     - { name: 'zip',  state: 'absent' }
     - { name: 'httpd', state: 'absent' }
     - { name: 'unzip', state: 'absent' }
