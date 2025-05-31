@@ -1,0 +1,17 @@
+- name: Ansible loops
+  hosts: frontend
+  connection: local
+  become: yes
+  tasks: 
+  - name: install packages
+    ansible.buitlin.package:
+      name: "{{item}}"
+      state: installed
+    loop:
+    - mysql
+    - nginx
+    - httpd
+    - zip
+    - unzip
+    - yum
+      
