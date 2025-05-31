@@ -1,7 +1,7 @@
 - name: Data types in Ansible
   hosts: local
   connection: local
-  varas:
+  vars:
     DURATION: 120 # Number
     COURSE: "DevSecOps with Aws"  # srting
     IS_LIVE: true # boolean
