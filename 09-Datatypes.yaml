@@ -12,7 +12,7 @@
     CONCEPTS:  # MAP or Dictionry or Object
       CI: jenkins
       SCRIPTING: "LINUX, ANISBLE,TERRAFORM,PYTHON"
-    tasks:
+  tasks:
     - name: print course info
       ansible.builtin.debug:
         msg: "Hello course is:{{COURSE}}, Duration is {{DURATION}},Tools are {{TOOLS}},Concepts {{CONCEPTS}}"  
