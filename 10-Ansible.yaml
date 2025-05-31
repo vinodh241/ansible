@@ -1,6 +1,5 @@
 - name: Ansible installation
   hosts: frontend
-  connection: 
   become: yes
   tasks:
   - name: installing Ansible 
@@ -11,10 +10,10 @@
     ansible.builtin.service:
       name: ansible
       state: started
-  # - name: enabled ansible
-  #   ansible.builtin.service:
-  #     name: ansible
-  #     enabled: yes
+  - name: enabled ansible
+    ansible.builtin.service:
+      name: ansible
+      enabled: yes
 
 
 
