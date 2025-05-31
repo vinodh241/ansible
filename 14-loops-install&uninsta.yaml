@@ -1,4 +1,4 @@
-- name: Ansible loops install and uninstall
+- name: Ansible loops
   hosts: frontend
   connection: local
   become: yes
