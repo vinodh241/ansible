@@ -4,7 +4,7 @@
   become: yes
   tasks: 
   - name: install packages
-    ansible.buitlin.package:
+    ansible.builtin.package:
       name: "{{item}}"
       state: installed
     loop:
@@ -14,4 +14,3 @@
     - zip
     - unzip
     - yum
-      
