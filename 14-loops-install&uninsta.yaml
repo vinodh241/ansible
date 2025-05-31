@@ -2,7 +2,7 @@
   hosts: frontend
   connection: local
   become: yes
-  tasks: 
+  tasks:
   - name: install & un-installing packages
     ansible.builtin.package:
       name: "{{ item }}"
