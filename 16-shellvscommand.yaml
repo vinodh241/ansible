@@ -12,6 +12,6 @@
     ansible.builtin.command: "ls -ltr"  
     register: command_output
   - name: output as command
-    ansible.biultin.debug:
+    ansible.builtin.debug:
       msg: "{{ command_output }}"
     
