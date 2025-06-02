@@ -5,7 +5,7 @@
     persons: "Ramesh, suresh,sivesh"
   tasks:
   - name: chcek the undefined varaibles
-    anible.builtin.debug:
+    ansible.builtin.debug:
       msg: "Hello, {{ person | default ('Ramesh') }}"  
   - name: print names
     ansible.buitin.debug:
