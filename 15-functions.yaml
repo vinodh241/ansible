@@ -1,0 +1,10 @@
+- name: Ansible functions = filters
+  hosts: local
+  connection: local
+  vars:
+    persons: "Ramesh, suresh,sivesh"
+  tasks:
+  - name: chcek the undefined varaibles
+    anible.builtin.debug:
+      msg: "Hello, {{ person | default ('Ramesh')}}"  
+  
