@@ -7,7 +7,8 @@
   - name: chcek the undefined varaibles
     ansible.builtin.debug:
       msg: "Hello, {{ person | default ('Ramesh') }}"  
+
   - name: print names
-    ansible.buitin.debug:
+    ansible.builtin.debug:
       msg: "Hello {{persons}}"    
   
